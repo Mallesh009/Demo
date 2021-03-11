@@ -273,7 +273,7 @@
 					 <input type="hidden" class="form-control" placeholder="Your Company Name *" id="updateid" name="updateid" value="0" />
 					  <input type="hidden" class="form-control" placeholder="Your Company Name *" id="logos" name="logos" value="" />
 					 <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Company Name *" id="cmpnyname" name="cmpnyname" value="" />
+                            <input type="text" class="form-control" placeholder="Your Company Name *" id="cmpnyname" name="cmpnyname" value="" required />
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Your Email *" id="email" name="email" value="" />
@@ -319,11 +319,11 @@
                     <form>
 					<input type="hidden" id="updateid1" name="updateid1" />
 					<div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your First Name *" id="fname" name="fname" value="" />
+                            <input type="text" class="form-control" placeholder="Your First Name *" id="fname" name="fname" value="" required />
                         </div>
 						
 					<div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Last Name *" id="lname" name="lname" value="" />
+                            <input type="text" class="form-control" placeholder="Your Last Name *" id="lname" name="lname" value="" required />
                         </div>
 					
 					
@@ -368,7 +368,7 @@
                         </div>
 						
 						<div class="form-group">
-                            <input type="number" class="form-control" placeholder="Your Mobile Name *" value="" id="mnumber" name="mnumber" />
+                            <input type="number" class="form-control" placeholder="Your Mobile Name *" value="" id="mnumber" name="mnumber" maxlength="140"  />
                         </div>
 					
                        
