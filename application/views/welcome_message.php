@@ -316,7 +316,7 @@
               <div class="row">
                 <div class="col-md-10 col-sm-10 col-xs-12 col-lg-10 login-form-1">
                     <h3>Add Employee</h3>
-                    <form enctype="multipart/form-data" onsubmit="return addemp()">
+                    <form enctype="multipart/form-data" >
 					<input type="hidden" id="updateid1" name="updateid1" />
 					<div class="form-group">
                             <input type="text" class="form-control" placeholder="Your First Name *" id="fname" name="fname" value="" required />
