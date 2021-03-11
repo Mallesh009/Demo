@@ -316,7 +316,7 @@
               <div class="row">
                 <div class="col-md-10 col-sm-10 col-xs-12 col-lg-10 login-form-1">
                     <h3>Add Employee</h3>
-                    <form>
+                    <form enctype="multipart/form-data" onsubmit="return addemp()">
 					<input type="hidden" id="updateid1" name="updateid1" />
 					<div class="form-group">
                             <input type="text" class="form-control" placeholder="Your First Name *" id="fname" name="fname" value="" required />
@@ -551,6 +551,22 @@ $.ajax({
 	var cname=$("#cname").val();
 	var eemail=$("#eemail").val();
 	var mnumber=$("#mnumber").val();
+	if(fname=="")
+	{
+		
+		alert("Enter First Name");
+		$("#fname").focus();
+		return false;
+	}
+	else if(lname=="")
+	{
+		alert("Enter Last Name");
+		$("#lname").focus();
+		return false;
+		
+	}
+	else
+	{
 	
 $.ajax({
 							url: baseUrl + "index.php/Welcome/addemp",
@@ -563,6 +579,7 @@ $.ajax({
 								
 							}
 });
+}
 }
 
 
