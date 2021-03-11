@@ -373,7 +373,7 @@
 					
                        
                         <div class="form-group">
-                            <button class="btn btn-success" onclick="addemp()" id="addemp">Register</button>
+                            <button class="btn btn-success" onclick="addemp()" id="addemps">Register</button>
 							 <button class="btn btn-success" onclick="updateemp()" id="addemp1" style="display:none" >Update</button>
                         </div>
                         
@@ -612,7 +612,7 @@ function edit1(id)
 	var result = confirm("Want To Edit-Employee?");
 				if (result) {
 					//$("#add").html("Update");
-					$("#addemp").hide();
+					$("#addemps").hide();
 					$("#addemp1").show();
 					
 $.ajax({
@@ -656,7 +656,7 @@ $.ajax({
 							dataType: "text",
 							success: function(result) {
 								alert(result);
-								$("#addemp").show();
+								$("#addemps").show();
 								$("#addemp1").hide();
 								location.reload();
 								
