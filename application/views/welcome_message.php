@@ -565,10 +565,7 @@ $.ajax({
 		return false;
 		
 	}
-	else if(cname=="Select")
-	{
-		cname="No Company Assigned";	
-	}
+	
 	else
 	{
 	
